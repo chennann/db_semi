@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.chennann.mapper.userMapper">
+    <insert id="addUser">
+        insert into table01(username, age) values (#{username}, #{age});
+    </insert>
+
+    <insert id="addUserSimgleParam">
+        insert into table01(username, age) values (#{name}, 23);
+    </insert>
+
+    <select id="selectAll" resultType="com.chennann.pojo.User">
+        select * from table01;
+    </select>
+</mapper>

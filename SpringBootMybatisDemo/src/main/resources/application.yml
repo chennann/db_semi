@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/db_semi
+    username: roy
+    password: qwer=1234
+
+server:
+  port: 10000
+
+logging:
+  level:
+    org:
+      mybatis: DEBUG
+      apache:
+        ibatis: DEBUG
+
+#mybatis:
+#  configuration:
+#    use-actual-param-name: false
