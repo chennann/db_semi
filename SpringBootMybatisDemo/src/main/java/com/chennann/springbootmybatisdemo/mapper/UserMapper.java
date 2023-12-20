@@ -22,7 +22,7 @@ public interface UserMapper {
     void twoParam(String username, int age);
 
     //sql注入演示
-    @Select("select * from user where username = #{username} and password = #{password}")
+    @Select("select * from user where username = ${username} and password = ${password}")
     User findUserByUsernameAndPassword(String username, String password);
 
 

@@ -22,9 +22,9 @@ public class test02 {
         userMapper userMapper = sqlSession.getMapper(userMapper.class);
 
 
-//        userMapper.addUserSimgleParam("qqq");
+//        userMapper.addUserSimgleParam("12_20");
 
-        userMapper.addUser("qwer", 20);
+        userMapper.addUser("1220", 22);
 
 //        sqlSession.commit();
         sqlSession.close();
